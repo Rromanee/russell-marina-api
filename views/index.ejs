@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Russell Marina</title>
+</head>
+<body>
+
+  <h1>Russell Marina API</h1>
+
+  <p>
+    Application de gestion des catways et réservations du port.
+  </p>
+
+  <h2>Connexion</h2>
+
+  <form action="/api/auth/login" method="POST">
+
+    <input
+      type="email"
+      name="email"
+      placeholder="Email"
+      required
+    >
+
+    <input
+      type="password"
+      name="password"
+      placeholder="Mot de passe"
+      required
+    >
+
+    <button type="submit">
+      Connexion
+    </button>
+
+  </form>
+
+  <br>
+
+  <a href="/docs">
+    Documentation API
+  </a>
+
+</body>
+</html>

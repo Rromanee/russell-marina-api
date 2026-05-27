@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Catways</title>
+</head>
+<body>
+
+  <h1>Liste des catways</h1>
+
+  <% catways.forEach(catway => { %>
+
+    <div>
+
+      <p>Numéro : <%= catway.catwayNumber %></p>
+
+      <p>Type : <%= catway.type %></p>
+
+      <p>État : <%= catway.catwayState %></p>
+
+      <a href="/catway/<%= catway._id %>">
+        Voir détails
+      </a>
+
+      <hr>
+
+    </div>
+
+  <% }) %>
+
+</body>
+</html>

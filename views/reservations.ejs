@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Réservations</title>
+</head>
+<body>
+
+  <h1>Liste des réservations</h1>
+
+  <% reservations.forEach(reservation => { %>
+
+    <div>
+
+      <p> Client : <%= reservation.clientName %> </p>
+
+      <p> Bateau : <%= reservation.boatName %> </p>
+
+      <a href="/reservation/<%= reservation._id %>">
+        Voir détails
+      </a>
+
+      <hr>
+
+    </div>
+
+  <% }) %>
+
+</body>
+</html>
